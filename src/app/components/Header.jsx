@@ -1,34 +1,34 @@
 import React from "react";
 import Link from "next/link";
-import LogoHeader from ".//Logo.jsx";
+import LogoHeader from "./Logo.jsx";
 import Image from "next/image.js";
 import HomeImage from "../../../public/assets/icons8-home.svg";
 import App from "./SearchInput.tsx";
 
-
 export default function Header() {
   return (
-    <header className="bg-black min-h-[10vh] flex items-center px-4">
+    <header className="bg-black min-h-[10vh] flex items-center px-4 relative">
+      <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 border-b border-white w-4/5  "></div>
+
       <div className="container mx-auto flex justify-between items-center font-mono font-bold">
         <div>
           <LogoHeader></LogoHeader>
         </div>
 
-        <nav className="hidden md:flex space-x-4">
-          <Link href="/">
+        <nav className="hidden md:flex space-x-4 gap-6">
+         
             <Link
               href="/"
-              className="flex items-center space-x-2 text-white text-lg tracking-wide py-2 hover:bg-red-700"
+              className="flex items-center space-x-2 text-white text-lg tracking-wide py-2 hover:text-blue-500 hover:underline"
             >
               <Image src={HomeImage} alt="Home Icon" width="24" height="24" />
               <span>Home</span>
             </Link>
-          </Link>
+        
           <div>
             <App />
           </div>
         </nav>
-
         {/* Burger Icon (visible seulement sur les petits écrans) */}
         <div className="md:hidden">
           <button className="text-white">
