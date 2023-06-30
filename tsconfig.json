@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/announces/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/announces/page.jsx", "src/app/detail-playlist/[playlistId]/page.jsx", "src/app/detail-album/[albumId]/page.jsx", "src/app/page.jsx"],
   "exclude": ["node_modules"]
 }

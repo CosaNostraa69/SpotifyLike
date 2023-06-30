@@ -5,8 +5,8 @@ export default function LogoHeader(){
     return(
         <Image className="max-sm:w-1/6 max-sm:h-1/6"
             src={logoImage}
-            width={100}
-            height={100}
+            width={60}
+            height={60}
             alt="Logo Spotify"
         />
     )
